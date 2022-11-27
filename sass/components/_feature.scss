@@ -6,6 +6,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: $tablet){
+      text-align: left;
+    }
   }
   
   .feature__text {
@@ -28,12 +33,16 @@
     border-radius: 4px;
   }
   .feature__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
   
   .feature {
-    display: flex;
+    
     margin-top: 94px;
     margin-bottom: 94px;
     list-style-type: none;
+
+    @media screen and (min-width: $tablet){
+      display: flex;
+    }
   }
