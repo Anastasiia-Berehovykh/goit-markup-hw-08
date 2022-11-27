@@ -1,0 +1,27 @@
+.footer {
+    background-color: var(--bgr-footer-hiro);
+    padding: 60px 0;
+  }
+  .footer__networks__link--inverse{
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-link .s-links {
+    fill: var(--white);
+  }
+  .footer-item {
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }

@@ -1,0 +1,35 @@
+.hero {
+    padding: 200px 0;
+    text-align: center;
+    background-color: var(--bgr-footer-hiro);
+  
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hiro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero-title {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  
+    font-family: "Roboto";
+    font-style: 400;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
