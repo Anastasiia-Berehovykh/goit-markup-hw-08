@@ -1,7 +1,12 @@
 .auth-nav {
+  display: none;
+
+  @media screen and (min-width: $tablet){
     display: flex;
     margin-left: auto;
     list-style-type: none;
+  }
+    
   }
   
   .icon-mail {
