@@ -8,6 +8,9 @@
   
     opacity: 1;
     transition: opacity 250ms var(--timing-function);
+
+    padding: 40px;
+    overflow-y: scroll;
   }
   
   .backdrop.is-hidden {
@@ -20,19 +23,27 @@
   }
   
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  
-    width: 528px;
-  height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
-    background-color: var(--white);
+      background-color: var(--white);
+
+    @media screen and (min-width: 1200px){
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    
+      max-width: 528px;
+    height: 581px;
+      width: 100%;
+    
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      transition: 250ms var(--timing-function);
+    } 
+    }
+    
   
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: 250ms var(--timing-function);
-  }
   
   .form-field {
     position: relative;

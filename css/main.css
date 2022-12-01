@@ -495,6 +495,8 @@ footer .logo-studio {
   opacity: 1;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
+  padding: 40px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -507,18 +509,25 @@ footer .logo-studio {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--white);
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    height: 581px;
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: 250ms var(--timing-function);
+    transition: 250ms var(--timing-function);
+  }
 }
 
 .form-field {
@@ -982,8 +991,10 @@ footer .logo-studio {
   fill: currentColor;
 }
 
-.social-link {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .social-link {
+    margin-left: 70px;
+  }
 }
 
 .clients {
