@@ -3,31 +3,46 @@
 
   @media screen and (min-width: $tablet){
     display: flex;
+    flex-direction: column;
     margin-left: auto;
+    padding-top: 21px;
     list-style-type: none;
+  }
+  @media screen and (min-width: $desktop){
+    flex-direction: row;
   }
     
   }
   
   .icon-mail {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
+    
     margin-right: 10px;
     fill: currentColor;
+
+    @media screen and (min-width: $desktop){
+      width: 16px;
+      height: 12px;
+    }
 
     &:hover,
     &:focus {
     fill: var(--accent);
   }
-  }
-  
+}
   .icon-phone {
     width: 10px;
-    height: 16px;
+    height: 14px;
     margin-right: 10px;
     fill: currentColor;
   
     transition: color 250ms var(--timing-function);
+
+    @media screen and (min-width: $desktop){
+      width: 10px;
+      height: 16px;
+    }
 
     &:hover,
     &:focus {
@@ -36,11 +51,21 @@
   }
   
   .auth-nav .item {
-    margin-left: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 
-    & + .item {
-        margin-left: 50px;
+    @media screen and (min-width: $desktop){
+      margin-left: auto;
+      font-size: 14px;
+line-height: 1.14;
+
+      & + .item {
+        margin-left: 40px;
       }
+    }
   }
   
   .auth-nav .link {
@@ -94,6 +119,7 @@
   }
   .adress-auth {
     text-decoration: none;
+    
   
     font-weight: 400;
     font-size: 14px;
@@ -105,7 +131,12 @@
     font-size: 14px;
     line-height: 1.71;
   }
-  
+  .adress{
+    margin-bottom: 60px;
+  }
+  .adress .item{
+    text-align: center;
+  }
   .adress .item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
   }

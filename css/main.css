@@ -218,6 +218,10 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button.secondary {
@@ -272,9 +276,16 @@ button {
           align-items: center;
   height: 60px;
 }
+@media screen and (min-width: 768px) {
+  .page-header .container {
+    height: 80px;
+  }
+}
 
 .logo-web {
-  margin-right: 93px;
+  margin-bottom: 28px;
+  text-align: center;
+  display: block;
   color: var(--accent);
   font-family: "Raleway";
   text-decoration: none;
@@ -284,6 +295,7 @@ button {
 }
 
 .logo-studio {
+  text-align: center;
   color: var(--black);
   font-family: "Raleway";
   text-decoration: none;
@@ -381,16 +393,35 @@ footer .logo-studio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
+    padding-top: 21px;
     list-style-type: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .icon-mail {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .icon-mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 .icon-mail:hover, .icon-mail:focus {
   fill: var(--accent);
@@ -398,21 +429,38 @@ footer .logo-studio {
 
 .icon-phone {
   width: 10px;
-  height: 16px;
+  height: 14px;
   margin-right: 10px;
   fill: currentColor;
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .icon-phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 .icon-phone:hover, .icon-phone:focus {
   fill: var(--accent);
 }
 
 .auth-nav .item {
-  margin-left: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
-.auth-nav .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .auth-nav .item {
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .auth-nav .item + .item {
+    margin-left: 40px;
+  }
 }
 
 .auth-nav .link {
@@ -481,8 +529,16 @@ footer .logo-studio {
   line-height: 1.71;
 }
 
+.adress {
+  margin-bottom: 60px;
+}
+
+.adress .item {
+  text-align: center;
+}
+
 .adress .item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .backdrop {
@@ -495,7 +551,6 @@ footer .logo-studio {
   opacity: 1;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
-  padding: 40px;
   overflow-y: scroll;
 }
 
@@ -949,10 +1004,10 @@ footer .logo-studio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 60px;
 }
 
 .networks__item {
@@ -992,8 +1047,8 @@ footer .logo-studio {
 }
 
 @media screen and (min-width: 768px) {
-  .social-link {
-    margin-left: 70px;
+  .social-link .social-link {
+    margin-left: auto;
   }
 }
 
@@ -1163,6 +1218,18 @@ footer .logo-studio {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.footer-adaptiv {
+  display: block;
+  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .footer-adaptiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer-link .s-links {
   fill: var(--white);
 }
@@ -1173,10 +1240,11 @@ footer .logo-studio {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
+  text-align: center;
 }
 
 .footer .container {
@@ -1196,17 +1264,17 @@ footer .logo-studio {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
+  text-align: center;
 }
 
 .invitation-form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .email {
