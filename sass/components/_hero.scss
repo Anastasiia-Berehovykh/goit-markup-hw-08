@@ -1,10 +1,10 @@
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: var(--bgr-footer-hiro);
   
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(
@@ -16,20 +16,36 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width:$tablet){
+      height: 459px;
+    }
+
+    @media screen and (min-width:$desktop){
+      height: 600px;
+      padding: 200px 0;
+    }
+
+    
   }
   
   .hero-title {
-    width: 696px;
+    width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
   
     font-family: "Roboto";
-    font-style: 400;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-  
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
     color: var(--white);
+
+    @media screen and (min-width:$desktop){
+      font-size: 44px;
+line-height: 1.36;
+width: 696px;
+    }
   }

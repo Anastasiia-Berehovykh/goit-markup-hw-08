@@ -46,6 +46,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -282,8 +288,7 @@ button {
   }
 }
 
-.logo-web {
-  margin-bottom: 28px;
+.nav .logo-web {
   text-align: center;
   display: block;
   color: var(--accent);
@@ -293,8 +298,18 @@ button {
   font-size: 26px;
   line-height: 1.19;
 }
+@media screen and (min-width: 768px) {
+  .nav .logo-web {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav .logo-web {
+    margin-right: 93px;
+  }
+}
 
-.logo-studio {
+.nav .logo-studio {
   text-align: center;
   color: var(--black);
   font-family: "Raleway";
@@ -305,6 +320,7 @@ button {
 }
 
 footer .logo-web {
+  margin-bottom: 28px;
   text-decoration: none;
   color: var(--accent);
   font-family: "Raleway";
@@ -756,11 +772,11 @@ footer .logo-studio {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: var(--bgr-footer-hiro);
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hiro.jpg);
@@ -769,19 +785,37 @@ footer .logo-studio {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 459px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding: 200px 0;
+  }
+}
 
 .hero-title {
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-family: "Roboto";
-  font-style: 400;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .benefits {
@@ -959,9 +993,7 @@ footer .logo-studio {
 }
 
 .employees {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   list-style-type: none;
 }
 
@@ -1046,8 +1078,11 @@ footer .logo-studio {
   fill: currentColor;
 }
 
+.social-link {
+  display: block;
+}
 @media screen and (min-width: 768px) {
-  .social-link .social-link {
+  .social-link {
     margin-left: auto;
   }
 }
@@ -1218,18 +1253,6 @@ footer .logo-studio {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-adaptiv {
-  display: block;
-  width: 480px;
-}
-@media screen and (min-width: 768px) {
-  .footer-adaptiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .footer-link .s-links {
   fill: var(--white);
 }
@@ -1247,17 +1270,23 @@ footer .logo-studio {
   text-align: center;
 }
 
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .invitation {
-  margin-left: auto;
+  margin: auto;
 }
 
 .invitation-name {
@@ -1275,6 +1304,14 @@ footer .logo-studio {
   position: relative;
   display: block;
   margin-bottom: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .invitation-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .email {

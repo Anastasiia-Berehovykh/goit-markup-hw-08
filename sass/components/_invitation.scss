@@ -1,5 +1,5 @@
 .invitation {
-    margin-left: auto;
+    margin: auto;
   }
   .invitation-name {
     margin-bottom: 20px;
@@ -15,8 +15,12 @@
     position: relative;
     display: block;
     margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (min-width: $desktop){
+      display: flex;
   }
-  
+}
   .email {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

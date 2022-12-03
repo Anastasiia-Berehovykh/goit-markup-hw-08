@@ -6,14 +6,7 @@
     color: var(--white);
     background: rgba(255, 255, 255, 0.1);
   }
-  .footer-adaptiv{
-    display: block;
-    width: 480px;
-
-    @media screen and (min-width: $tablet){
-        display: flex;
-     }
-  }
+ 
   
   .footer-link .s-links {
     fill: var(--white);
@@ -31,6 +24,12 @@
     text-align: center;
   }
   .footer .container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $tablet){
+      display: flex;
+    }
+    @media screen and (min-width: $desktop){
+      align-items: baseline;
+    }
+    
+    // align-items: baseline;
   }
