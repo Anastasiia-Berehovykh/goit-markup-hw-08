@@ -138,6 +138,10 @@ line-height: 1.14;
   }
   .adress .item{
     text-align: center;
+
+    @media screen and (min-width: $desktop){
+      text-align: left;
+    }
   }
   .adress .item:not(:last-child) {
     margin-bottom: 12px;

@@ -33,3 +33,30 @@
     
     // align-items: baseline;
   }
+
+  .footer-logo-adress{
+    text-align: center;
+
+    @media screen and (min-width: $tablet){
+      width: 232px;
+      height: 72px;
+      margin-left: 76px;
+    }
+
+    @media screen and (min-width: $desktop){
+      text-align: left;
+      margin-left: 0;
+      margin-right: 70px;
+    }
+  }
+
+  .social-link-invitation{
+    @media screen and (min-width: $tablet){
+      display: block;
+    }
+
+    @media screen and (min-width: $desktop){
+      display: flex;
+      align-items: baseline;
+    }
+  }

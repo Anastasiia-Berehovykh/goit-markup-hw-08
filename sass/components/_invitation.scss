@@ -1,5 +1,13 @@
 .invitation {
-    margin: auto;
+    
+    text-align: center;
+
+ 
+
+    @media screen and (min-width: $desktop){
+      margin-left: auto;
+  }
+
   }
   .invitation-name {
     margin-bottom: 20px;
@@ -16,6 +24,7 @@
     display: block;
     margin-bottom: 20px;
     width: 100%;
+    
 
     @media screen and (min-width: $desktop){
       display: flex;
@@ -25,10 +34,23 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
     padding: 15px 16px;
     background-color: transparent;
     color: var(--icon-color);
+    display: block;
+
+    @media screen and (min-width: $tablet){
+      width: 450px;
+      
+  }
+  @media screen and (min-width: $desktop){
+    width: 358px;
+    margin: 0;
+    
+    
+}
   }
   .icon-send {
     position: absolute;

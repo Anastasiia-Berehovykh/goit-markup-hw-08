@@ -202,38 +202,52 @@
         </div>
       </section>
 
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="examples list">
             <li class="examples__item">
               <div class="examples__image">
-                <img src="./img/box1.jpg" alt="Створення сайтів" width="370" />
+                <img 
+                srcset="./img/work/wd1-370.jpg, ./img/work/wd1-740.jpg"
+                src="./img/box1.jpg" alt="Створення сайтів" width="370" />
                 <p class="examples__name">Десктопні додатки</p>
               </div>
             </li>
             <li class="examples__item">
               <div class="examples__image">
-                <img src="./img/img.jpg" alt="Розробка додатків" width="370" />
+                <img
+                srcset="./img/work/wd2-370.jpg, ./img/work/wd2-740.jpg"
+                 src="./img/img.jpg" alt="Розробка додатків" width="370" />
                 <p class="examples__name">Мобільні додатки</p>
               </div>
             </li>
             <li class="examples__item">
               <div class="examples__image">
-                <img src="./img/box3.jpg" alt="Дизайн" width="370" />
+                <img
+                srcset="./img/work/wd3-370.jpg, ./img/work/wd3-740.jpg"
+                 src="./img/box3.jpg" alt="Дизайн" width="370" />
                 <p class="examples__name">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
        <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="employees list">
             <li class="employees__list">
-              <img src="./img/2(2).jpg" alt="Фото" width="270" />
+              <img
+              srcset="./img/empl/d1_270.jpg 270w,
+               ./img/empl/t1_354.jpg 354w,
+                ./imge/mpl/m1_450.jpg 450w, 
+                ./img/empl/d1_540.jpg 540w, 
+                ./img/empl/t1_708.jpg 708w, 
+                ./img/empl/m1_900.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+               src="./img/empl/d1_270.jpg" alt="Фото"/>
               <div class="employees__portfolio">
                 <h3 class="employees__name">Ігор Дем'яненко</h3>
                 <p class="employees__position">Product Designer</p>
@@ -270,7 +284,15 @@
               </div>
             </li>
             <li class="employees__list">
-              <img src="./img/2(1).jpg" alt="Фото" width="270" />
+              <img
+              srcset="./img/empl/d2_270.jpg 270w,
+               ./img/empl/t2_354.jpg 354w,
+                ./img/empl/m2_450.jpg 450w,
+                 ./img/empl/d2_540.jpg 540w, 
+                 ./img/empl/t2_708.jpg 708w, 
+                 ./img/empl/m2_900.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+               src="./img/empl/d2_270.jpg" alt="Фото"/>
               <div class="employees__portfolio">
                 <h3 class="employees__name">Ольга Рєпіна</h3>
                 <p class="employees__position">Frontend Developer</p>
@@ -308,7 +330,15 @@
               </div>
             </li>
             <li class="employees__list">
-              <img src="./img/4(2).jpg" alt="Фото" width="270" />
+              <img
+              srcset="./img/empl/d3_270.jpg 270w,
+              ./img/empl/t3_354.jpg 354w,
+               ./img/empl/m3_450.jpg 450w,
+                ./img/empl/d3_540.jpg 540w, 
+                ./img/empl/t3_708.jpg 708w, 
+                ./img/empl/m3_900.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+               src="./img/empl/d3_270.jpg" alt="Фото"/>
               <div class="employees__portfolio">
                 <h3 class="employees__name">Микола Тарасов</h3>
                 <p class="employees__position">Marketing</p>
@@ -345,7 +375,14 @@
               </div>
             </li>
             <li class="employees__list">
-              <img src="./img/4(1).jpg" alt="Фото" width="270" />
+              <img
+              srcset="./img/empl/d4_270.jpg 270w,
+               ./img/empl/t4_354.jpg 354w,
+                ./img/empl/m4_450.jpg 450w,
+                 ./img/empl/d4_540.jpg 540w,
+                  ./img/empl/t4_708.jpg 708w,
+                   ./img/empl/m4_900.jpg 900w"
+                   sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
               <div class="employees__portfolio">
                 <h3 class="employees__name">Михайло Єрмаков</h3>
                 <p class="employees__position">UI Designer</p>
@@ -438,7 +475,7 @@
     <footer class="footer">
       <div class="container">
     
-      <div>
+      <div class="footer-logo-adress">
         <a href="./index.html" class="logo-web"
         >Web<span class="logo-studio">Studio</span></a
       >
@@ -467,7 +504,7 @@
       </address>
       </div>
        
-      
+      <div class="social-link-invitation">
         <div class="social-link">
           <p class="footer-item">Приєднуйтесь</p>
           <ul class="networks list">
@@ -522,6 +559,8 @@
             </button>
           </form>
         </div>
+      </div>
+        
       
       
       

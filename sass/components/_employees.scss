@@ -1,9 +1,15 @@
 .employees {
     display: block;
     list-style-type: none;
-
-    
-
+   
+    @media screen and (min-width: $tablet){
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: $desktop){
+      display: flex;
+    }
   }
   .employees__list{
     background: #ffffff;
@@ -13,10 +19,21 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     
-
-    &:not(:last-child) {
-        margin-right: 30px;
-      }
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $tablet){
+      width: calc(100% - 2 * 30px)/2;
+      margin: 15px;
+    }
+    @media screen and (min-width: $desktop){
+      width: calc(100% - 4 * 30px)/4;
+      margin: 15px;
+    }
+   
+    
+    
   }
   
   .employees__portfolio{
