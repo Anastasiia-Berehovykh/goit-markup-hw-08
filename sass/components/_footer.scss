@@ -26,6 +26,9 @@
   .footer .container {
     @media screen and (min-width: $tablet){
       display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: baseline;
     }
     @media screen and (min-width: $desktop){
       align-items: baseline;
@@ -38,9 +41,7 @@
     text-align: center;
 
     @media screen and (min-width: $tablet){
-      width: 232px;
-      height: 72px;
-      margin-left: 76px;
+      
     }
 
     @media screen and (min-width: $desktop){
@@ -50,13 +51,13 @@
     }
   }
 
-  .social-link-invitation{
-    @media screen and (min-width: $tablet){
-      display: block;
-    }
+  // .social-link-invitation{
+  //   @media screen and (min-width: $tablet){
+  //     display: block;
+  //   }
 
-    @media screen and (min-width: $desktop){
-      display: flex;
-      align-items: baseline;
-    }
-  }
+  //   @media screen and (min-width: $desktop){
+  //     display: flex;
+  //     align-items: baseline;
+  //   }
+  // }

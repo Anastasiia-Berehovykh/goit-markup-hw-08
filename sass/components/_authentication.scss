@@ -7,6 +7,7 @@
     margin-left: auto;
     padding-top: 21px;
     list-style-type: none;
+    
   }
   @media screen and (min-width: $desktop){
     flex-direction: row;
@@ -56,6 +57,14 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet){
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      
+    }
 
     @media screen and (min-width: $desktop){
       margin-left: auto;
@@ -131,11 +140,7 @@ line-height: 1.14;
     font-size: 14px;
     line-height: 1.71;
   }
-  .adress{
-    margin-bottom: 60px;
-    
-    
-  }
+  
   .adress .item{
     text-align: center;
 
