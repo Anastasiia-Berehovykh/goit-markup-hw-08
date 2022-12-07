@@ -1,7 +1,7 @@
 .networks{
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
+   
   }
   .networks__item{
     margin-right: 10px;
@@ -38,6 +38,7 @@
   }
 .social-link{
   display: block;
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet){
     

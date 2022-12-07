@@ -1,8 +1,9 @@
 .invitation {
     
+  @media screen and (max-width: 1199px){
     text-align: center;
-margin-top: 60px;
-   
+    margin-top: 60px;
+}
 
     @media screen and (min-width: $desktop){
       margin-left: auto;
@@ -17,7 +18,11 @@ margin-top: 60px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
-    text-align: center;
+
+    @media screen and (max-width: 1199px){
+      text-align: center;
+  }
+    
   }
   .invitation-form {
     position: relative;
